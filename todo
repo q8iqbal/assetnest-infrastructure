@@ -1,0 +1,4 @@
+1. containerize assetnest and push to docker hub 
+2. put ssl csrtificate
+3. create ansible role for docker pull and docker restart
+4. ansible cron job renew certificate
