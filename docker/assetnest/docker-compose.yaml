@@ -25,12 +25,8 @@ services:
             - lumen
 
     assetnest:
-        build: 
-            context: .
-            dockerfile: assetnest.Dockerfile
+        image: oppaiman22/assetnest:1.0.0
         container_name: assetnest
-        volumes: 
-            - ./letsencrypt:/etc/letsencrypt
         ports: 
             - "80:80"
             - "443:443"
@@ -38,5 +34,4 @@ services:
             - lumen
         depends_on:
             - mariadb
-    
-    
+
