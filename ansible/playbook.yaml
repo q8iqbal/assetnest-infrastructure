@@ -1,1 +1,7 @@
---
+---
+- name : Prepare droplet for assetnest Backend and Frontend
+  hosts : all
+  roles:  
+    - docker 
+    - docker-compose
+    - ssl

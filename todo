@@ -2,3 +2,18 @@
 2. put ssl csrtificate
 3. create ansible role for docker pull and docker restart
 4. ansible cron job renew certificate
+
+roles 
+ docker :
+   ensure docker is installed 
+
+ common :
+    ??
+
+ docker-compose :
+    ensure docker-compose is installed
+    docker-compose down && docker-compose build --pull && docker-compose up -d
+
+ ssl :
+    docker exec -it --rm assetnest certbot --nginx
+    cron renew

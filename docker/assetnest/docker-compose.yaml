@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.3'
 
 networks: 
     lumen :
@@ -25,7 +25,7 @@ services:
             - lumen
 
     assetnest:
-        image: oppaiman22/assetnest:1.0.1
+        image: oppaiman22/assetnest:latest
         container_name: assetnest
         volumes: 
             - ./upload:/var/www/assetnest-backend/public/upload/

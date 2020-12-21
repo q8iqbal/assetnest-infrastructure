@@ -1,0 +1,2 @@
+- name : generate ssl certificate inside container
+  command: docker exec -it assetnest sh -c 'certbot --agree-tos --email iqbalnurimansyah@gmail.com --nginx certonly -n -d assetnest.me -d api.assetnest.me'

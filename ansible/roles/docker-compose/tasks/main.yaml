@@ -1,0 +1,13 @@
+- name: Install docker-compose
+  apt: name=docker-compose state=latest update_cache=yes
+
+- name : make foder upload uploadable
+  file:
+    path: /home/assetnest/upload
+    state: directory
+    recurse: yes
+    mode: 0777
+
+- name: run compose up for assetnest project
+  docker_compose : 
+    project_src: /home/assetnest/
